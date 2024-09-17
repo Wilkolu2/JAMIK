@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controler : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController CharacterController;
 
     public float movementSpeed = 9.0f;
     public float currentMovementSpeed;
+    public Vector3 lastPosition;
     public float maxMovementSpeedOnWalk = 9.0f;
     public float jumpHeight = 7.0f;
     public float jumpHeightNow = 0f;
@@ -32,25 +33,27 @@ public class Controler : MonoBehaviour
     {
         if (isSprint == false)
             movementSpeed = maxMovementSpeedOnWalk;
+        currentMovementSpeed = Vector3.Distance(lastPosition, transform.position) * 100f;
+        lastPosition = transform.position;
 
-
-        mouse();
-        keyboard();
+        Mouse();
+        Keyboard();
 
 
     }
 
-    private void keyboard()
+    private void Keyboard()
     {
+        
         float moveWS = Input.GetAxis("Vertical") * movementSpeed;
-        float movveAD = Input.GetAxis("Horizontal") * movementSpeed;
+        float moveAD = Input.GetAxis("Horizontal") * movementSpeed;
 
 
         //skakanie
         if (CharacterController.isGrounded && Input.GetButton("Jump"))
         {
-            jumpHeightNow = jumpHeight;
-            isJump = true;
+           // jumpHeightNow = jumpHeight;
+           // isJump = true;
         }
         else if (!CharacterController.isGrounded)
         {
@@ -72,14 +75,13 @@ public class Controler : MonoBehaviour
         }
 
 
-        Vector3 move = new Vector3(movveAD, jumpHeightNow, moveWS);
+        Vector3 move = new Vector3(moveAD, jumpHeightNow, moveWS);
         move = transform.rotation * move;
 
         CharacterController.Move(move * Time.deltaTime);
-
     }
 
-    private void mouse()
+    private void Mouse()
     {
         float mouseLeftRight = Input.GetAxis("Mouse X") * sensivity;
         transform.Rotate(0, mouseLeftRight, 0);
