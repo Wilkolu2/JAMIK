@@ -7,23 +7,26 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController CharacterController;
 
-    public float movementSpeed = 9.0f;
+    public float movementSpeed = 7.0f;
     public float currentMovementSpeed;
     public Vector3 lastPosition;
-    public float maxMovementSpeedOnWalk = 9.0f;
+    public float maxMovementSpeedOnWalk = 7.0f;
     public float jumpHeight = 7.0f;
     public float jumpHeightNow = 0f;
-    public float sprintSpeed = 7.0f;
+    public float sprintSpeed = 12.0f;
     public float sensivity = 3.0f;
     public float mouseUpDown = 0.0f;
     public float zakresMyszkiGoraDol = 90.0f;
     public float fastFalling = 0f;
     public bool isSprint;
     public bool isJump;
+    public float stamina;
+    public float maxStamina = 100f;
 
     // Use this for initialization
     void Start()
     {
+        stamina = maxStamina;
         isSprint = false;
         CharacterController = GetComponent<CharacterController>();
     }
@@ -32,14 +35,29 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (isSprint == false)
+        {
             movementSpeed = maxMovementSpeedOnWalk;
+            if(stamina<maxStamina)
+            {
+                stamina += Time.deltaTime * 5f;
+            }
+        }
+           
         currentMovementSpeed = Vector3.Distance(lastPosition, transform.position) * 100f;
         lastPosition = transform.position;
 
         Mouse();
         Keyboard();
 
-
+        if(stamina<=0)
+        {
+            isSprint = false;
+            sprintSpeed = maxMovementSpeedOnWalk;
+        }
+        else
+        {
+            sprintSpeed = 12f;
+        }
     }
 
     private void Keyboard()
@@ -63,14 +81,16 @@ public class PlayerMovement : MonoBehaviour
 
 
         //bieganie
-        if (Input.GetKeyDown("left shift"))
+        if (Input.GetKey("left shift") && stamina > 0)
         {
-            movementSpeed += sprintSpeed;
             isSprint = true;
+            stamina -= Time.deltaTime*10f;
+            movementSpeed = sprintSpeed;
+            
         }
-        else if (Input.GetKeyUp("left shift"))
+        else if (Input.GetKeyUp("left shift") || stamina <= 0)
         {
-            movementSpeed -= sprintSpeed;
+            movementSpeed = maxMovementSpeedOnWalk;
             isSprint = false;
         }
 
