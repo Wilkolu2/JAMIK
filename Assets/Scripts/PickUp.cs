@@ -28,12 +28,10 @@ public class PickUp : MonoBehaviour
         if (Physics.Raycast(ray, out raycastHit, range))
         {
             objectName = raycastHit.collider.gameObject.name;
-            Debug.Log(objectName);
         }
         else
         {
             objectName = null;
-            Debug.Log(objectName);
         }
 
         if (objectName == null)
@@ -63,7 +61,6 @@ public class PickUp : MonoBehaviour
                 if (Physics.Raycast(ray, out raycastHit, 100f))
                 {
                     objectName = raycastHit.collider.gameObject.name;
-                    Debug.Log(objectName);
                 }
             }          
         }
