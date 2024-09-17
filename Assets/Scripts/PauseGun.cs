@@ -22,7 +22,6 @@ public class PauseGun : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)) 
         {
-            Debug.Log("strzal");
             projectileObject = Instantiate(projectilePrefab);
             projectileObject.transform.position = this.transform.position;
             projectileObject.GetComponent<Rigidbody>().AddForce(mainCamera.transform.forward * projectileSpeed);

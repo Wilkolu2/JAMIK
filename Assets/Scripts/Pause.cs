@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    public bool isPaused;
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<Rigidbody>().Sleep();
+        isPaused = true;
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class Pause : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Projectile"))
         {
+            isPaused = false;
             GetComponent<Rigidbody>().WakeUp();
         }
     }
