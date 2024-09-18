@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!49 &4900000
+TextAsset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mbs-pack-descriptor
+  m_Script: "{\n    \"guid\": \"38ec4c5482cf48eca14d93499c854436\",\n    \"_name\":
+    \"Walle\",\n    \"_wallGroups\": [\n        {\n            \"guid\": \"2768e87396af48ffa75aa27f20d2c613\",\n           
+    \"name\": \"New Wall Group\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"53f2c5e525d245b8b1be7af70b7c256c\",\n                    \"name\":
+    \"Wall1\",\n                    \"prefabs\": [\n                        {\n                           
+    \"fileID\": 5008090455345376471,\n                            \"guid\": \"6ea5a68304b081e459babdac8fe61001\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        },\n        {\n            \"guid\": \"1cb53f80e50c48a9b81d9d1ef070d41b\",\n           
+    \"name\": \"Wall2\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"f273395f38be453d966d0544ec57b48c\",\n                    \"name\":
+    \"Wall2\",\n                    \"prefabs\": [\n                        {\n                           
+    \"fileID\": 9000020129151022656,\n                            \"guid\": \"596b3dd216c3898409ed94a1ee7152c6\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        }\n    ],\n    \"_floorGroups\": [],\n    \"_decoratorGroups\":
+    [],\n    \"_decoratorCategories\": [\n        {\n            \"guid\": \"5bb4a3613d6e46da810d162ced947818\",\n           
+    \"_name\": \"All\"\n        }\n    ]\n}"

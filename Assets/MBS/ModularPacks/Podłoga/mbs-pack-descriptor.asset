@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!49 &4900000
+TextAsset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mbs-pack-descriptor
+  m_Script: "{\n    \"guid\": \"b45691d8a303455ab06fd2d96d87dc0e\",\n    \"_name\":
+    \"Pod\u0142oga\",\n    \"_wallGroups\": [],\n    \"_floorGroups\": [\n       
+    {\n            \"guid\": \"bca381717c4048cb9f7c033e7ca06e5b\",\n            \"name\":
+    \"Floor_1\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"0f1837014fdb46659c6e415b7d4afac0\",\n                    \"name\":
+    \"Floor_1\",\n                    \"prefabs\": [\n                        {\n                           
+    \"fileID\": 9000020129151022656,\n                            \"guid\": \"80abf67f949a9ee48a167113233e01ac\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        }\n    ],\n    \"_decoratorGroups\": [],\n    \"_decoratorCategories\":
+    [\n        {\n            \"guid\": \"c6753e5b6dd244f1a150e2fbda1aefd8\",\n           
+    \"_name\": \"All\"\n        }\n    ]\n}"

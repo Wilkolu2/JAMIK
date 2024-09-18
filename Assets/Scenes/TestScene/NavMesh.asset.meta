@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Scenes/TestScene/NavMesh.asset.meta
 guid: 30b377ef1a8253e46b9c0a9f5ef93938
 NativeFormatImporter:
+=======
+guid: 8f32f863aa271dd4688af60349706e63
+PrefabImporter:
+>>>>>>> Stashed changes:Assets/Models/Wall_modular_1.prefab.meta
   externalObjects: {}
   mainObjectFileID: 23800000
   userData: 
