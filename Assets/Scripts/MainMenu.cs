@@ -14,7 +14,6 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
         if(SceneManager.GetActiveScene().name.Equals("HowToPlay") && (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(0)))
         {
             SceneManager.LoadScene("MainMenu");
