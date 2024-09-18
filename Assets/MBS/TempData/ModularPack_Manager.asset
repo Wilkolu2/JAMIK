@@ -12,4 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1df4646eac5ce4d9e55cc24ddc96f9, type: 3}
   m_Name: ModularPack_Manager
   m_EditorClassIdentifier: 
-  _modularPacks: []
+  _modularPacks:
+  - guid: 2cac3f7aa0e345f48978f5c2b182d303
+    _name: Laboratoy
+    _wallGroups:
+    - guid: 16f64e61cb4b4419ba62e5f2cae1d4eb
+      name: Wall_1
+      _modules:
+      - guid: 15adaf6394bd400d9be3ff13ae7f27d3
+        name: Wall_1
+        prefabs:
+        - {fileID: 5008090455345376471, guid: 6ea5a68304b081e459babdac8fe61001, type: 3}
+        - {fileID: 0}
+      - guid: 0da38ce836af4dcbbb7647afcac591fd
+        name: Wall_1_1
+        prefabs:
+        - {fileID: 2105435441608997103, guid: f7150e276a7706a4aba48bc989646fcf, type: 3}
+        - {fileID: 0}
+      - guid: bc6e0f3b53fd41f6ace732fb4d921947
+        name: Wall_1_2
+        prefabs:
+        - {fileID: 5599178083818227034, guid: 62e0ceac767d6a34098394c4e53b2129, type: 3}
+        - {fileID: 0}
+    - guid: 739d9bc14f574c29ad62de714786bf4b
+      name: Wall_2
+      _modules:
+      - guid: c61357b1cbdc4b7f95ff023a8da67afc
+        name: Wall_2
+        prefabs:
+        - {fileID: 9000020129151022656, guid: 548897424a8a13949ad1cab3f3f738ee, type: 3}
+        - {fileID: 0}
+      - guid: fa8f92e7c2384d4391144519edbf7045
+        name: Wall_2_1
+        prefabs:
+        - {fileID: 1900378334164726798, guid: 4c49719db6a014d40b4346eb3d0c2c5d, type: 3}
+        - {fileID: 0}
+    _floorGroups:
+    - guid: b9e2c2004e084191af1414ceee69e7d5
+      name: Floor_1
+      _modules:
+      - guid: 6e4f62d8acf640a1a45c5ae306bff1e4
+        name: Floor_1
+        prefabs:
+        - {fileID: 1546264529042686698, guid: 001adc42bea55f54580a2a4e2a09fe39, type: 3}
+        - {fileID: 0}
+    _decoratorGroups: []
+    _decoratorCategories:
+    - guid: 6f803732be01441692ba59bef40266af
+      _name: All

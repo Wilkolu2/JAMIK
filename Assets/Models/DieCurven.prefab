@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3909664407679296533}
   - component: {fileID: 9193994144075961136}
   m_Layer: 0
-  m_Name: Floor_modular_2
+  m_Name: DieCurven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
