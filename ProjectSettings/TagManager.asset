@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MBS:Floor
-  - MBS:Wall
   - Projectile
   - Waypoint1
   - Waypoint2
