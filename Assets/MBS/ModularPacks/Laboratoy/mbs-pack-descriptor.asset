@@ -113,6 +113,19 @@ TextAsset:
     \"guid\": \"59adcbdf02aeb6d47abec4cdc18a9740\",\n                           
     \"type\": 3\n                        },\n                        {\n                           
     \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        },\n        {\n            \"guid\": \"147978425c75432c93cfb9fa244dacdf\",\n           
+    \"name\": \"Roof\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"20b438e97072415d910d5c33ff496611\",\n                    \"name\":
+    \"Roof_Tile\",\n                    \"prefabs\": [\n                        {\n                           
+    \"fileID\": 7346634056363563979,\n                            \"guid\": \"4cdee7dff8384f54699a667046573f4a\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"f03c5bd90fc9496fa4b168419c9d4c1f\",\n                   
+    \"name\": \"Roof_Curven\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 2055534738685156906,\n                           
+    \"guid\": \"5657de97f3e16754295c90c5887d564d\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
     }\n            ]\n        }\n    ],\n    \"_decoratorGroups\": [],\n    \"_decoratorCategories\":
     [\n        {\n            \"guid\": \"6f803732be01441692ba59bef40266af\",\n           
     \"_name\": \"All\"\n        }\n    ]\n}"
