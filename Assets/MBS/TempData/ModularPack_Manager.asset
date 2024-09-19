@@ -56,6 +56,14 @@ MonoBehaviour:
         prefabs:
         - {fileID: 1546264529042686698, guid: 001adc42bea55f54580a2a4e2a09fe39, type: 3}
         - {fileID: 0}
+    - guid: 946b32dd3c7d4cb4a2b6fc08a935c111
+      name: FloorActual
+      _modules:
+      - guid: 1a66da3a777e489ebbb6b7cb0a534094
+        name: GooDFloor
+        prefabs:
+        - {fileID: 1945264033796330985, guid: 637aa7eb97b36ef4eb37a4dca1f1f0c1, type: 3}
+        - {fileID: 0}
     _decoratorGroups: []
     _decoratorCategories:
     - guid: 6f803732be01441692ba59bef40266af

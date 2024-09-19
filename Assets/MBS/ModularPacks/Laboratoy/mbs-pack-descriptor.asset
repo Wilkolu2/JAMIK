@@ -40,6 +40,56 @@ TextAsset:
     \"guid\": \"4c49719db6a014d40b4346eb3d0c2c5d\",\n                           
     \"type\": 3\n                        },\n                        {\n                           
     \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        },\n        {\n            \"guid\": \"62a0ff9cd65749c99bec89592eda317c\",\n           
+    \"name\": \"GoodWall\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"a64a1b7d6d2642af8d8e385160a4b677\",\n                    \"name\":
+    \"Wall_mod_4\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 1459866550622809819,\n                           
+    \"guid\": \"e8015f6973119b44ab859e279c9ab4bd\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"de3a4f4a13a948efafa65f7f5b41bde0\",\n                   
+    \"name\": \"Wall_Mod_3\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 9149246004626010476,\n                           
+    \"guid\": \"734b6441ff2bef545a5ed51791dd0b8a\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"205bc607a4514e5c872bb9fc1b4a673d\",\n                   
+    \"name\": \"Wall_mod_2\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 9000020129151022656,\n                           
+    \"guid\": \"548897424a8a13949ad1cab3f3f738ee\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"b41051a9e28943d7b02123f88ec7c30f\",\n                   
+    \"name\": \"Wall_mod_2_1\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 1900378334164726798,\n                           
+    \"guid\": \"4c49719db6a014d40b4346eb3d0c2c5d\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"0fbdf2ecd9a544dcb9491e2f3c8f21e3\",\n                   
+    \"name\": \"Wall_mod_2_2\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 1546264529042686698,\n                           
+    \"guid\": \"001adc42bea55f54580a2a4e2a09fe39\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"6004414d40674210950120800a8c21d2\",\n                   
+    \"name\": \"Wall_mod_1\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 5008090455345376471,\n                           
+    \"guid\": \"6ea5a68304b081e459babdac8fe61001\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"770418be7494430e9068d15528e362b9\",\n                   
+    \"name\": \"Wall_mod_1_1\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 2105435441608997103,\n                           
+    \"guid\": \"f7150e276a7706a4aba48bc989646fcf\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"bd41ee9ba573425c9f2240a79f718e90\",\n                   
+    \"name\": \"Wall_mod_1_2\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 5599178083818227034,\n                           
+    \"guid\": \"62e0ceac767d6a34098394c4e53b2129\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
     }\n            ]\n        }\n    ],\n    \"_floorGroups\": [\n        {\n           
     \"guid\": \"b9e2c2004e084191af1414ceee69e7d5\",\n            \"name\": \"Floor_1\",\n           
     \"_modules\": [\n                {\n                    \"guid\": \"6e4f62d8acf640a1a45c5ae306bff1e4\",\n                   
@@ -53,6 +103,14 @@ TextAsset:
     \"guid\": \"1a66da3a777e489ebbb6b7cb0a534094\",\n                    \"name\":
     \"GooDFloor\",\n                    \"prefabs\": [\n                        {\n                           
     \"fileID\": 1945264033796330985,\n                            \"guid\": \"637aa7eb97b36ef4eb37a4dca1f1f0c1\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        },\n        {\n            \"guid\": \"5afe3cbd6e57445dbd1d352ba34d4901\",\n           
+    \"name\": \"Curven\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"ca2ded443ab84d1bb22e0a56f105d55b\",\n                    \"name\":
+    \"CurvenEins\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 1079694469018939911,\n                           
+    \"guid\": \"59adcbdf02aeb6d47abec4cdc18a9740\",\n                           
     \"type\": 3\n                        },\n                        {\n                           
     \"instanceID\": 0\n                        }\n                    ]\n               
     }\n            ]\n        }\n    ],\n    \"_decoratorGroups\": [],\n    \"_decoratorCategories\":
