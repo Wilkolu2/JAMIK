@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PauseGun : MonoBehaviour
 {
@@ -8,20 +11,28 @@ public class PauseGun : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private GameObject projectileObject;
     [SerializeField] private float projectileSpeed = 100f;
+    [SerializeField] private PickUp pickUp;
+    [SerializeField] private TMP_Text ammoText;
+    public int maxAmmo;
+    public int currentAmmo;
     // Start is called before the first frame update
     void Start()
     {
-
+        currentAmmo = maxAmmo;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
-        //RaycastHit raycastHit;
-
-        if(Input.GetMouseButtonDown(0)) 
+        if (currentAmmo > maxAmmo)
         {
+            currentAmmo = maxAmmo;
+        }
+        ammoText.text = currentAmmo.ToString() + "/" + maxAmmo.ToString();
+
+        if(Input.GetMouseButtonDown(0) && pickUp.isPickingUp==false && currentAmmo>0) 
+        {
+            currentAmmo--;
             projectileObject = Instantiate(projectilePrefab);
             projectileObject.transform.position = this.transform.position;
             projectileObject.GetComponent<Rigidbody>().AddForce(mainCamera.transform.forward * projectileSpeed);

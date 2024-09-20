@@ -7,6 +7,12 @@ TagManager:
   - Projectile
   - Waypoint1
   - Waypoint2
+  - Ammo
+  - TestItem
+  - Item1
+  - Item2
+  - Item3
+  - Item4
   layers:
   - Default
   - TransparentFX
