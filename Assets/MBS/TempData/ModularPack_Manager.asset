@@ -47,6 +47,49 @@ MonoBehaviour:
         prefabs:
         - {fileID: 1900378334164726798, guid: 4c49719db6a014d40b4346eb3d0c2c5d, type: 3}
         - {fileID: 0}
+    - guid: 62a0ff9cd65749c99bec89592eda317c
+      name: GoodWall
+      _modules:
+      - guid: a64a1b7d6d2642af8d8e385160a4b677
+        name: Wall_mod_4
+        prefabs:
+        - {fileID: 1459866550622809819, guid: e8015f6973119b44ab859e279c9ab4bd, type: 3}
+        - {fileID: 0}
+      - guid: de3a4f4a13a948efafa65f7f5b41bde0
+        name: Wall_Mod_3
+        prefabs:
+        - {fileID: 9149246004626010476, guid: 734b6441ff2bef545a5ed51791dd0b8a, type: 3}
+        - {fileID: 0}
+      - guid: 205bc607a4514e5c872bb9fc1b4a673d
+        name: Wall_mod_2
+        prefabs:
+        - {fileID: 9000020129151022656, guid: 548897424a8a13949ad1cab3f3f738ee, type: 3}
+        - {fileID: 0}
+      - guid: b41051a9e28943d7b02123f88ec7c30f
+        name: Wall_mod_2_1
+        prefabs:
+        - {fileID: 1900378334164726798, guid: 4c49719db6a014d40b4346eb3d0c2c5d, type: 3}
+        - {fileID: 0}
+      - guid: 0fbdf2ecd9a544dcb9491e2f3c8f21e3
+        name: Wall_mod_2_2
+        prefabs:
+        - {fileID: 1546264529042686698, guid: 001adc42bea55f54580a2a4e2a09fe39, type: 3}
+        - {fileID: 0}
+      - guid: 6004414d40674210950120800a8c21d2
+        name: Wall_mod_1
+        prefabs:
+        - {fileID: 5008090455345376471, guid: 6ea5a68304b081e459babdac8fe61001, type: 3}
+        - {fileID: 0}
+      - guid: 770418be7494430e9068d15528e362b9
+        name: Wall_mod_1_1
+        prefabs:
+        - {fileID: 2105435441608997103, guid: f7150e276a7706a4aba48bc989646fcf, type: 3}
+        - {fileID: 0}
+      - guid: bd41ee9ba573425c9f2240a79f718e90
+        name: Wall_mod_1_2
+        prefabs:
+        - {fileID: 5599178083818227034, guid: 62e0ceac767d6a34098394c4e53b2129, type: 3}
+        - {fileID: 0}
     _floorGroups:
     - guid: b9e2c2004e084191af1414ceee69e7d5
       name: Floor_1
@@ -63,6 +106,35 @@ MonoBehaviour:
         name: GooDFloor
         prefabs:
         - {fileID: 1945264033796330985, guid: 637aa7eb97b36ef4eb37a4dca1f1f0c1, type: 3}
+        - {fileID: 0}
+    - guid: 5afe3cbd6e57445dbd1d352ba34d4901
+      name: Curven
+      _modules:
+      - guid: ca2ded443ab84d1bb22e0a56f105d55b
+        name: CurvenEins
+        prefabs:
+        - {fileID: 1079694469018939911, guid: 59adcbdf02aeb6d47abec4cdc18a9740, type: 3}
+        - {fileID: 0}
+    - guid: 147978425c75432c93cfb9fa244dacdf
+      name: Roof
+      _modules:
+      - guid: 20b438e97072415d910d5c33ff496611
+        name: Roof_Tile
+        prefabs:
+        - {fileID: 7346634056363563979, guid: 4cdee7dff8384f54699a667046573f4a, type: 3}
+        - {fileID: 0}
+      - guid: f03c5bd90fc9496fa4b168419c9d4c1f
+        name: Roof_Curven
+        prefabs:
+        - {fileID: 2055534738685156906, guid: 5657de97f3e16754295c90c5887d564d, type: 3}
+        - {fileID: 0}
+    - guid: abb62d6c5e9042b4ae955da3432d12f5
+      name: RoomFloor
+      _modules:
+      - guid: 85af72bc716b421792491c42719c3dd5
+        name: RoomFloor_1
+        prefabs:
+        - {fileID: 7878890252572255385, guid: 7c90072cd01277242ad9ac324b4a73a8, type: 3}
         - {fileID: 0}
     _decoratorGroups: []
     _decoratorCategories:

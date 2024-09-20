@@ -126,6 +126,14 @@ TextAsset:
     \"guid\": \"5657de97f3e16754295c90c5887d564d\",\n                           
     \"type\": 3\n                        },\n                        {\n                           
     \"instanceID\": 0\n                        }\n                    ]\n               
+    }\n            ]\n        },\n        {\n            \"guid\": \"abb62d6c5e9042b4ae955da3432d12f5\",\n           
+    \"name\": \"RoomFloor\",\n            \"_modules\": [\n                {\n                   
+    \"guid\": \"85af72bc716b421792491c42719c3dd5\",\n                    \"name\":
+    \"RoomFloor_1\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 7878890252572255385,\n                           
+    \"guid\": \"7c90072cd01277242ad9ac324b4a73a8\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
     }\n            ]\n        }\n    ],\n    \"_decoratorGroups\": [],\n    \"_decoratorCategories\":
     [\n        {\n            \"guid\": \"6f803732be01441692ba59bef40266af\",\n           
     \"_name\": \"All\"\n        }\n    ]\n}"
