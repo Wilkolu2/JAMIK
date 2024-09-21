@@ -71,7 +71,7 @@ public class PickUp : MonoBehaviour
             item[0].GetComponent<Outline>().enabled = false;
         }
 
-        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false)
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
         {
             isPickingUp = true;
             if(objectName.Equals("TestItem"))
@@ -86,7 +86,7 @@ public class PickUp : MonoBehaviour
                 }
             }          
         }
-        else if(Input.GetKeyUp(KeyCode.E))
+        else if(Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
         {
             isPickingUp = false;
             item[0].GetComponent<Outline>().enabled = false;
@@ -105,7 +105,7 @@ public class PickUp : MonoBehaviour
             item[1].GetComponent<Outline>().enabled = false;
         }
 
-        if (objectName != null && Input.GetKey(KeyCode.E))
+        if (objectName != null && Input.GetKey(KeyCode.E) && pauseGun.isReloading == false)
         {
             if (objectName.Equals("TestAmmo"))
             {

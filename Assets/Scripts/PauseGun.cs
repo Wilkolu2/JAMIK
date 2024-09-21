@@ -16,7 +16,7 @@ public class PauseGun : MonoBehaviour
     [SerializeField] private TMP_Text magazinesText;
     [SerializeField] private Image reloadCircle;
     [SerializeField] private float reloadTimer = 2f;
-    [SerializeField] private bool isReloading = false;
+    public bool isReloading = false;
     public int maxAmmo;
     public int currentAmmo;
     public int magazines;
@@ -34,7 +34,7 @@ public class PauseGun : MonoBehaviour
         ammoText.text = currentAmmo.ToString() + "/" + maxAmmo.ToString();
         magazinesText.text = "x" + magazines.ToString();
 
-        if(Input.GetMouseButtonDown(0) && pickUp.isPickingUp==false && currentAmmo>0) 
+        if(Input.GetMouseButtonDown(0) && pickUp.isPickingUp==false && currentAmmo>0 && isReloading==false) 
         {
             currentAmmo--;
             projectileObject = Instantiate(projectilePrefab);
