@@ -109,7 +109,7 @@ public class PickUp : MonoBehaviour
         {
             if (objectName.Equals("TestAmmo"))
             {
-                pauseGun.currentAmmo += pauseGun.maxAmmo;
+                pauseGun.magazines++;
                 Destroy(item[1]);
                 isPickingUp = false;
                 objectName = null;
