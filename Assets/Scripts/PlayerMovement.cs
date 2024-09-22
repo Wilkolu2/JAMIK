@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public float stamina;
     public float maxStamina = 100f;
 
+    
+
     [SerializeField] private GameObject deathImage;
     [SerializeField] private GameObject deathButton;
 

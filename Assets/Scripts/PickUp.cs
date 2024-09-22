@@ -372,7 +372,7 @@ public class PickUp : MonoBehaviour
         if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
         {
             isPickingUp = true;
-            if (objectName.Equals("Barrel42"))
+            if (objectName.Equals("Barrel48"))
             {
                 item[48].GetComponent<Outline>().enabled = false;
                 item[48].GetComponent<Rigidbody>().useGravity = false;
@@ -1940,6 +1940,106 @@ public class PickUp : MonoBehaviour
             item[94].GetComponent<Outline>().enabled = false;
             item[94].GetComponent<Rigidbody>().useGravity = true;
             item[94].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        
+        //////////
+        if (objectName.Equals("Bolec1"))
+        {
+            item[95].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Bolec1"))
+        {
+            item[95].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Bolec1"))
+            {
+                item[95].GetComponent<Outline>().enabled = false;
+                item[95].GetComponent<Rigidbody>().useGravity = false;
+                item[95].GetComponent<Collider>().isTrigger = true;
+                item[95].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[95].GetComponent<Outline>().enabled = false;
+            item[95].GetComponent<Rigidbody>().useGravity = true;
+            item[95].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        } //////////
+        if (objectName.Equals("Bolec2"))
+        {
+            item[96].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Bolec2"))
+        {
+            item[96].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Bolec2"))
+            {
+                item[96].GetComponent<Outline>().enabled = false;
+                item[96].GetComponent<Rigidbody>().useGravity = false;
+                item[96].GetComponent<Collider>().isTrigger = true;
+                item[96].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[96].GetComponent<Outline>().enabled = false;
+            item[96].GetComponent<Rigidbody>().useGravity = true;
+            item[96].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Bolec3"))
+        {
+            item[97].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Bolec3"))
+        {
+            item[97].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Bolec3"))
+            {
+                item[97].GetComponent<Outline>().enabled = false;
+                item[97].GetComponent<Rigidbody>().useGravity = false;
+                item[97].GetComponent<Collider>().isTrigger = true;
+                item[97].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[97].GetComponent<Outline>().enabled = false;
+            item[97].GetComponent<Rigidbody>().useGravity = true;
+            item[97].GetComponent<Collider>().isTrigger = false;
             objectName = null;
         }
         //////////
