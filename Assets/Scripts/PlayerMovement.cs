@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,12 +21,18 @@ public class PlayerMovement : MonoBehaviour
     public float fastFalling = 0f;
     public bool isSprint;
     public bool isJump;
+    public bool isDead = false;
     public float stamina;
     public float maxStamina = 100f;
+
+    [SerializeField] private GameObject deathImage;
+    [SerializeField] private GameObject deathButton;
 
     // Use this for initialization
     void Start()
     {
+        deathImage.SetActive(false);
+        deathButton.SetActive(false);
         stamina = maxStamina;
         isSprint = false;
         CharacterController = GetComponent<CharacterController>();
@@ -46,8 +53,16 @@ public class PlayerMovement : MonoBehaviour
         currentMovementSpeed = Vector3.Distance(lastPosition, transform.position) * 100f;
         lastPosition = transform.position;
 
-        Mouse();
-        Keyboard();
+        if(isDead==false)
+        {
+            Mouse();
+            Keyboard();
+        }
+        else if(isDead==true)
+        {
+            deathButton.SetActive(true);
+            deathImage.SetActive(true);
+        }
 
         if(stamina<=0)
         {
