@@ -1118,6 +1118,7 @@ public class PickUp : MonoBehaviour
             item[70].GetComponent<Collider>().isTrigger = false;
             objectName = null;
         }
+        ////////
         if (objectName.Equals("Barrel71"))
         {
             item[71].GetComponent<Outline>().enabled = true;
@@ -1150,6 +1151,7 @@ public class PickUp : MonoBehaviour
             item[71].GetComponent<Collider>().isTrigger = false;
             objectName = null;
         }
+        ///////
         if (objectName.Equals("Barrel72"))
         {
             item[72].GetComponent<Outline>().enabled = true;
@@ -1180,6 +1182,764 @@ public class PickUp : MonoBehaviour
             item[72].GetComponent<Outline>().enabled = false;
             item[72].GetComponent<Rigidbody>().useGravity = true;
             item[72].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope73"))
+        {
+            item[73].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope73"))
+        {
+            item[73].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope73"))
+            {
+                item[73].GetComponent<Outline>().enabled = false;
+                item[73].GetComponent<Rigidbody>().useGravity = false;
+                item[73].GetComponent<Collider>().isTrigger = true;
+                item[73].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[73].GetComponent<Outline>().enabled = false;
+            item[73].GetComponent<Rigidbody>().useGravity = true;
+            item[73].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope73"))
+        {
+            item[73].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope73"))
+        {
+            item[73].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope73"))
+            {
+                item[73].GetComponent<Outline>().enabled = false;
+                item[73].GetComponent<Rigidbody>().useGravity = false;
+                item[73].GetComponent<Collider>().isTrigger = true;
+                item[73].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[73].GetComponent<Outline>().enabled = false;
+            item[73].GetComponent<Rigidbody>().useGravity = true;
+            item[73].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        } //////////
+        if (objectName.Equals("Microscope74"))
+        {
+            item[74].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope74"))
+        {
+            item[74].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope74"))
+            {
+                item[74].GetComponent<Outline>().enabled = false;
+                item[74].GetComponent<Rigidbody>().useGravity = false;
+                item[74].GetComponent<Collider>().isTrigger = true;
+                item[74].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[74].GetComponent<Outline>().enabled = false;
+            item[74].GetComponent<Rigidbody>().useGravity = true;
+            item[74].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope75"))
+        {
+            item[75].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope75"))
+        {
+            item[75].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope75"))
+            {
+                item[75].GetComponent<Outline>().enabled = false;
+                item[75].GetComponent<Rigidbody>().useGravity = false;
+                item[75].GetComponent<Collider>().isTrigger = true;
+                item[75].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[75].GetComponent<Outline>().enabled = false;
+            item[75].GetComponent<Rigidbody>().useGravity = true;
+            item[75].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope76"))
+        {
+            item[76].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope76"))
+        {
+            item[76].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope76"))
+            {
+                item[76].GetComponent<Outline>().enabled = false;
+                item[76].GetComponent<Rigidbody>().useGravity = false;
+                item[76].GetComponent<Collider>().isTrigger = true;
+                item[76].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[76].GetComponent<Outline>().enabled = false;
+            item[76].GetComponent<Rigidbody>().useGravity = true;
+            item[76].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope77"))
+        {
+            item[77].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope77"))
+        {
+            item[77].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope77"))
+            {
+                item[77].GetComponent<Outline>().enabled = false;
+                item[77].GetComponent<Rigidbody>().useGravity = false;
+                item[77].GetComponent<Collider>().isTrigger = true;
+                item[77].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[77].GetComponent<Outline>().enabled = false;
+            item[77].GetComponent<Rigidbody>().useGravity = true;
+            item[77].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope78"))
+        {
+            item[78].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope78"))
+        {
+            item[78].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope78"))
+            {
+                item[78].GetComponent<Outline>().enabled = false;
+                item[78].GetComponent<Rigidbody>().useGravity = false;
+                item[78].GetComponent<Collider>().isTrigger = true;
+                item[78].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[78].GetComponent<Outline>().enabled = false;
+            item[78].GetComponent<Rigidbody>().useGravity = true;
+            item[78].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope79"))
+        {
+            item[79].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope79"))
+        {
+            item[79].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope79"))
+            {
+                item[79].GetComponent<Outline>().enabled = false;
+                item[79].GetComponent<Rigidbody>().useGravity = false;
+                item[79].GetComponent<Collider>().isTrigger = true;
+                item[79].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[79].GetComponent<Outline>().enabled = false;
+            item[79].GetComponent<Rigidbody>().useGravity = true;
+            item[79].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope80"))
+        {
+            item[80].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope80"))
+        {
+            item[80].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope80"))
+            {
+                item[80].GetComponent<Outline>().enabled = false;
+                item[80].GetComponent<Rigidbody>().useGravity = false;
+                item[80].GetComponent<Collider>().isTrigger = true;
+                item[80].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[80].GetComponent<Outline>().enabled = false;
+            item[80].GetComponent<Rigidbody>().useGravity = true;
+            item[80].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope81"))
+        {
+            item[81].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope81"))
+        {
+            item[81].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope81"))
+            {
+                item[81].GetComponent<Outline>().enabled = false;
+                item[81].GetComponent<Rigidbody>().useGravity = false;
+                item[81].GetComponent<Collider>().isTrigger = true;
+                item[81].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[81].GetComponent<Outline>().enabled = false;
+            item[81].GetComponent<Rigidbody>().useGravity = true;
+            item[81].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope82"))
+        {
+            item[82].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope82"))
+        {
+            item[82].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope82"))
+            {
+                item[82].GetComponent<Outline>().enabled = false;
+                item[82].GetComponent<Rigidbody>().useGravity = false;
+                item[82].GetComponent<Collider>().isTrigger = true;
+                item[82].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[82].GetComponent<Outline>().enabled = false;
+            item[82].GetComponent<Rigidbody>().useGravity = true;
+            item[82].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope83"))
+        {
+            item[83].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope83"))
+        {
+            item[83].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope83"))
+            {
+                item[83].GetComponent<Outline>().enabled = false;
+                item[83].GetComponent<Rigidbody>().useGravity = false;
+                item[83].GetComponent<Collider>().isTrigger = true;
+                item[83].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[83].GetComponent<Outline>().enabled = false;
+            item[83].GetComponent<Rigidbody>().useGravity = true;
+            item[83].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope84"))
+        {
+            item[84].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope84"))
+        {
+            item[84].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope84"))
+            {
+                item[84].GetComponent<Outline>().enabled = false;
+                item[84].GetComponent<Rigidbody>().useGravity = false;
+                item[84].GetComponent<Collider>().isTrigger = true;
+                item[84].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[84].GetComponent<Outline>().enabled = false;
+            item[84].GetComponent<Rigidbody>().useGravity = true;
+            item[84].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope85"))
+        {
+            item[85].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope85"))
+        {
+            item[85].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope85"))
+            {
+                item[85].GetComponent<Outline>().enabled = false;
+                item[85].GetComponent<Rigidbody>().useGravity = false;
+                item[85].GetComponent<Collider>().isTrigger = true;
+                item[85].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[85].GetComponent<Outline>().enabled = false;
+            item[85].GetComponent<Rigidbody>().useGravity = true;
+            item[85].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope86"))
+        {
+            item[86].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope86"))
+        {
+            item[86].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope86"))
+            {
+                item[86].GetComponent<Outline>().enabled = false;
+                item[86].GetComponent<Rigidbody>().useGravity = false;
+                item[86].GetComponent<Collider>().isTrigger = true;
+                item[86].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[86].GetComponent<Outline>().enabled = false;
+            item[86].GetComponent<Rigidbody>().useGravity = true;
+            item[86].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope87"))
+        {
+            item[87].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope87"))
+        {
+            item[87].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope87"))
+            {
+                item[87].GetComponent<Outline>().enabled = false;
+                item[87].GetComponent<Rigidbody>().useGravity = false;
+                item[87].GetComponent<Collider>().isTrigger = true;
+                item[87].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[87].GetComponent<Outline>().enabled = false;
+            item[87].GetComponent<Rigidbody>().useGravity = true;
+            item[87].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope88"))
+        {
+            item[88].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope88"))
+        {
+            item[88].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope88"))
+            {
+                item[88].GetComponent<Outline>().enabled = false;
+                item[88].GetComponent<Rigidbody>().useGravity = false;
+                item[88].GetComponent<Collider>().isTrigger = true;
+                item[88].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[88].GetComponent<Outline>().enabled = false;
+            item[88].GetComponent<Rigidbody>().useGravity = true;
+            item[88].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope89"))
+        {
+            item[89].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope89"))
+        {
+            item[89].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope89"))
+            {
+                item[89].GetComponent<Outline>().enabled = false;
+                item[89].GetComponent<Rigidbody>().useGravity = false;
+                item[89].GetComponent<Collider>().isTrigger = true;
+                item[89].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[89].GetComponent<Outline>().enabled = false;
+            item[89].GetComponent<Rigidbody>().useGravity = true;
+            item[89].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope90"))
+        {
+            item[90].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope90"))
+        {
+            item[90].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope90"))
+            {
+                item[90].GetComponent<Outline>().enabled = false;
+                item[90].GetComponent<Rigidbody>().useGravity = false;
+                item[90].GetComponent<Collider>().isTrigger = true;
+                item[90].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[90].GetComponent<Outline>().enabled = false;
+            item[90].GetComponent<Rigidbody>().useGravity = true;
+            item[90].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope91"))
+        {
+            item[91].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope91"))
+        {
+            item[91].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope91"))
+            {
+                item[91].GetComponent<Outline>().enabled = false;
+                item[91].GetComponent<Rigidbody>().useGravity = false;
+                item[91].GetComponent<Collider>().isTrigger = true;
+                item[91].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[91].GetComponent<Outline>().enabled = false;
+            item[91].GetComponent<Rigidbody>().useGravity = true;
+            item[91].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope92"))
+        {
+            item[92].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope92"))
+        {
+            item[92].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope92"))
+            {
+                item[92].GetComponent<Outline>().enabled = false;
+                item[92].GetComponent<Rigidbody>().useGravity = false;
+                item[92].GetComponent<Collider>().isTrigger = true;
+                item[92].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[92].GetComponent<Outline>().enabled = false;
+            item[92].GetComponent<Rigidbody>().useGravity = true;
+            item[92].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope93"))
+        {
+            item[93].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope93"))
+        {
+            item[93].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope93"))
+            {
+                item[93].GetComponent<Outline>().enabled = false;
+                item[93].GetComponent<Rigidbody>().useGravity = false;
+                item[93].GetComponent<Collider>().isTrigger = true;
+                item[93].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[93].GetComponent<Outline>().enabled = false;
+            item[93].GetComponent<Rigidbody>().useGravity = true;
+            item[93].GetComponent<Collider>().isTrigger = false;
+            objectName = null;
+        }
+        //////////
+        if (objectName.Equals("Microscope94"))
+        {
+            item[94].GetComponent<Outline>().enabled = true;
+        }
+        else if (!objectName.Equals("Microscope94"))
+        {
+            item[94].GetComponent<Outline>().enabled = false;
+        }
+
+        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
+        {
+            isPickingUp = true;
+            if (objectName.Equals("Microscope94"))
+            {
+                item[94].GetComponent<Outline>().enabled = false;
+                item[94].GetComponent<Rigidbody>().useGravity = false;
+                item[94].GetComponent<Collider>().isTrigger = true;
+                item[94].transform.position = pickUpPoint.position;
+                if (Physics.Raycast(ray, out raycastHit, 100f))
+                {
+                    objectName = raycastHit.collider.gameObject.name;
+                }
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
+        {
+            isPickingUp = false;
+            item[94].GetComponent<Outline>().enabled = false;
+            item[94].GetComponent<Rigidbody>().useGravity = true;
+            item[94].GetComponent<Collider>().isTrigger = false;
             objectName = null;
         }
         //////////
