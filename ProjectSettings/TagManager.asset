@@ -7,11 +7,15 @@ TagManager:
   - MBS:Floor
   - MBS:Wall
   - Projectile
+  - Item1
+  - Waypoint1
+  - Ammo
+  - Waypoint2
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ItemToGrab
   - Water
   - UI
   - 
