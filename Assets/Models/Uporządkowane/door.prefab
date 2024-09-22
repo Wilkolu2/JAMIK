@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5209602822980210369}
   - component: {fileID: 797870238665198653}
   - component: {fileID: 4903849145047029399}
-  - component: {fileID: -7097542379630682714}
   - component: {fileID: -9214284507943948807}
   m_Layer: 0
   m_Name: door
@@ -108,19 +107,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -567259905036692206, guid: d20f5f019444f7746bb3123a6a63b913, type: 3}
---- !u!114 &-7097542379630682714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3297028558494033444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 589898e66c932154eb37c92ac690072f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPaused: 0
 --- !u!54 &-9214284507943948807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,5 +132,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
