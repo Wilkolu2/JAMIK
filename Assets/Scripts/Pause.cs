@@ -15,7 +15,10 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isPaused==false)
+        {
+            GetComponent<Rigidbody>().WakeUp();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
