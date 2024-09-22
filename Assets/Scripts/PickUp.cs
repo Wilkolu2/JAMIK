@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
     [SerializeField] private float range = 1f;
     [SerializeField] private string objectName;
     [SerializeField] private Transform pickUpPoint;
-    [SerializeField] private GameObject[] item = new GameObject[5];
+    [SerializeField] private GameObject[] item = new GameObject[20];
     [SerializeField] private PauseGun pauseGun;
     public bool isPickingUp = false;
     public bool isPaused;
