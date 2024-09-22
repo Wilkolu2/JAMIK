@@ -30,13 +30,13 @@ public class PressurePlate : MonoBehaviour
         else if(!pause.isPaused && !other.gameObject.CompareTag("Projectile"))
         {
             Debug.Log("elegancja francja"); //cos sie dzieje np door(open);
-            door.transform.eulerAngles = new Vector3(0, rotation, 0);
+            door.gameObject.SetActive(false);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        door.transform.eulerAngles = startRot;
+        door.gameObject.SetActive(true);
     }
 
 }
