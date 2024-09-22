@@ -16,6 +16,7 @@ public class PauseGun : MonoBehaviour
     [SerializeField] private TMP_Text magazinesText;
     [SerializeField] private Image reloadCircle;
     [SerializeField] private float reloadTimer = 2f;
+    [SerializeField] private PlayerMovement player;
     public bool isReloading = false;
     public int maxAmmo;
     public int currentAmmo;
@@ -34,7 +35,7 @@ public class PauseGun : MonoBehaviour
         ammoText.text = currentAmmo.ToString() + "/" + maxAmmo.ToString();
         magazinesText.text = "x" + magazines.ToString();
 
-        if(Input.GetMouseButtonDown(0) && pickUp.isPickingUp==false && currentAmmo>0 && isReloading==false) 
+        if(Input.GetMouseButtonDown(0) && pickUp.isPickingUp==false && currentAmmo>0 && isReloading==false && player.isDead==false) 
         {
             currentAmmo--;
             projectileObject = Instantiate(projectilePrefab);
@@ -42,7 +43,7 @@ public class PauseGun : MonoBehaviour
             projectileObject.GetComponent<Rigidbody>().AddForce(mainCamera.transform.forward * projectileSpeed);
         }
         
-        if(Input.GetKeyDown(KeyCode.R) && magazines > 0 && isReloading == false)
+        if(Input.GetKeyDown(KeyCode.R) && magazines > 0 && isReloading == false && player.isDead==false)
         {
             isReloading = true;  
         }

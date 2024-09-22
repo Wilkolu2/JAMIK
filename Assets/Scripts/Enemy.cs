@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 public class Enemy : MonoBehaviour
 {
-
+    [SerializeField] private PlayerMovement player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && GetComponent<EnemyPathfinding>().isPurist)
         {
-            
+            player.isDead = true;
             Debug.Log("you dead");
             Destroy(this.gameObject);
             
