@@ -126,6 +126,12 @@ TextAsset:
     \"guid\": \"5657de97f3e16754295c90c5887d564d\",\n                           
     \"type\": 3\n                        },\n                        {\n                           
     \"instanceID\": 0\n                        }\n                    ]\n               
+    },\n                {\n                    \"guid\": \"941bc327aba247e79942c30867fffb1f\",\n                   
+    \"name\": \"RoomRoofRepairCurven\",\n                    \"prefabs\": [\n                       
+    {\n                            \"fileID\": 4225537870709420175,\n                           
+    \"guid\": \"66e5629367b07774791ea2e49a7b7065\",\n                           
+    \"type\": 3\n                        },\n                        {\n                           
+    \"instanceID\": 0\n                        }\n                    ]\n               
     }\n            ]\n        },\n        {\n            \"guid\": \"abb62d6c5e9042b4ae955da3432d12f5\",\n           
     \"name\": \"RoomFloor\",\n            \"_modules\": [\n                {\n                   
     \"guid\": \"85af72bc716b421792491c42719c3dd5\",\n                    \"name\":
