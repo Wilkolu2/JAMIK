@@ -789,38 +789,7 @@ public class PickUp : MonoBehaviour
             objectName = null;
         }
         //////////
-        if (objectName.Equals("Barrel61"))
-        {
-            item[61].GetComponent<Outline>().enabled = true;
-        }
-        else if (!objectName.Equals("Barrel61"))
-        {
-            item[61].GetComponent<Outline>().enabled = false;
-        }
-
-        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
-        {
-            isPickingUp = true;
-            if (objectName.Equals("Barrel61"))
-            {
-                item[61].GetComponent<Outline>().enabled = false;
-                item[61].GetComponent<Rigidbody>().useGravity = false;
-                item[61].GetComponent<Collider>().isTrigger = true;
-                item[61].transform.position = pickUpPoint.position;
-                if (Physics.Raycast(ray, out raycastHit, 100f))
-                {
-                    objectName = raycastHit.collider.gameObject.name;
-                }
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
-        {
-            isPickingUp = false;
-            item[61].GetComponent<Outline>().enabled = false;
-            item[61].GetComponent<Rigidbody>().useGravity = true;
-            item[61].GetComponent<Collider>().isTrigger = false;
-            objectName = null;
-        }
+        
         //////////
         if (objectName.Equals("Barrel62"))
         {
@@ -987,38 +956,7 @@ public class PickUp : MonoBehaviour
             objectName = null;
         }
         //////////
-        if (objectName.Equals("Barrel67"))
-        {
-            item[67].GetComponent<Outline>().enabled = true;
-        }
-        else if (!objectName.Equals("Barrel67"))
-        {
-            item[67].GetComponent<Outline>().enabled = false;
-        }
-
-        if (objectName != null && Input.GetKey(KeyCode.E) && isPaused == false && pauseGun.isReloading == false)
-        {
-            isPickingUp = true;
-            if (objectName.Equals("Barrel67"))
-            {
-                item[67].GetComponent<Outline>().enabled = false;
-                item[67].GetComponent<Rigidbody>().useGravity = false;
-                item[67].GetComponent<Collider>().isTrigger = true;
-                item[67].transform.position = pickUpPoint.position;
-                if (Physics.Raycast(ray, out raycastHit, 100f))
-                {
-                    objectName = raycastHit.collider.gameObject.name;
-                }
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.E) || (Input.GetKey(KeyCode.E) && pauseGun.isReloading == true))
-        {
-            isPickingUp = false;
-            item[67].GetComponent<Outline>().enabled = false;
-            item[67].GetComponent<Rigidbody>().useGravity = true;
-            item[67].GetComponent<Collider>().isTrigger = false;
-            objectName = null;
-        }
+       
         //////////
         if (objectName.Equals("Barrel68"))
         {
